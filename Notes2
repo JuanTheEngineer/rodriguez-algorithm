@@ -1,0 +1,214 @@
+        node *root = NULL;                                      B = ->greater, A = ->less, C = constant, c = local constant
+
+            C;      // 1
+            C = C;
+            C = C = C;
+            root = C;
+
+        if((root->less == NULL && root->greater == NULL))
+            C;   // 2
+            C = C;
+            C = root;
+            C = C;
+            root = C;
+
+
+        else if(root->greater == NULL)
+            C;   // 3
+            C = C;
+            C = C = C;
+                root->greater = C;
+
+        if(root->less != NULL && root->greater->less == NULL)
+            C;   // 4
+            C = C;
+            C = root;
+            C = C;
+            root = C;
+
+
+        else if(root->greater == NULL)
+            C;   // 5
+            C = C;
+            C = C = C;
+            root->greater = C;
+
+        if(root->less != NULL && root->greater-> != NULL)
+            C;   // 6
+            C = C;               //c
+            C = root->greater;
+            C = C;            //c
+            root->greater = C;
+
+
+        else if(root->greater->greater == NULL)
+            C;   // 7
+            C = C;
+            C = C = C;
+            root->greater->greater = C;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            C;   // 8
+            C = C;               //c
+            C = root;
+            C = C;            //c
+            root = C;
+
+
+        else if(root->greater->greater == NULL)
+            C;   // 9
+            C = C;
+            C = C = C;
+            root->greater = C;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            C;   // 10
+            C = C;               //c
+            C = root->greater;
+            C = C;            //c
+            root->greater = C;
+
+
+        else if(root->greater->greater == NULL)
+            C;   // 11
+            C = C;
+            C = C = C;
+            root->greater->greater = C;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            C;   // 12
+            C = C;               //c
+            C = root->greater;
+            C = C;            //c
+            root->greater = C;
+
+
+        else if(root->greater->greater == NULL)
+            C;   // 13
+            C = C;
+            C = C = C;
+            root->greater->greater = C;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            C;   // 14
+            C = C;               //c
+            C = root->greater->greater;
+            C = C;            //c
+            root->greater->greater = C;
+
+        else if(root->greater->greater == NULL)
+            C;   // 15
+            C = C;
+            C = C = C;
+            root->greater->greater->greater = C;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            C;   // 16
+            C = C;               //c
+            C = root;
+            C = C;            //c
+            root = C;
+
+        else if(root->greater->greater == NULL)
+            C;   // 17
+            C = C;
+            C = C = C;
+            root->greater = C;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            C;   // 18
+            C = C;               //c
+            C = root->greater;
+            C = C;            //c
+            root->greater = C;
+
+        else if(root->greater->greater == NULL)
+            C;   // 19
+            C = C;
+            C = C = C;
+            root->greater->greater = C;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            C;   // 20
+            C = C;               //c
+            C = root->greater;
+            C = C;            //c
+            root->greater = C;
+
+        else if(root->greater->greater == NULL)
+            C;   // 21
+            C = C;
+            C = C = C;
+            root->greater->greater = C;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            C;   // 22
+            C = C;               //c
+            C = root->greater->greater;
+            C = C;            //c
+            root->greater->greater = C;
+
+        else if(root->greater->greater == NULL)
+            C;   // 23
+            C = C;
+            C = C = C;
+            root->greater->greater->greater = C;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            C;   // 24
+            C = C;               //c
+            C = root->greater->greater;
+            C = C;            //c
+            root->greater->greater = C;
+
+        else if(root->greater->greater == NULL)
+            C;   // 25
+            C = C;
+            C = C = C;
+            root->greater->greater = C;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            C;   // 26
+            C = C;               //c
+            C = root->greater;
+            C = C;            //c
+            root->greater = C;
+
+        else if(root->greater->greater == NULL)
+            C;   // 27
+            C = C;
+            C = C = C;
+            root->greater->greater->greater = C;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            C;   // 28
+            C = C;               //c
+            C = root->greater->greater;
+            C = C;            //c
+            root->greater->greater = C;
+
+        else if(root->greater->greater == NULL)
+            C;   // 29
+            C = C;
+            C = C = C;
+            root->greater->greater->greater = C;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            C;   // 30
+            C = C;               //c
+            C = root->greater->greater->greater;
+            C = C;            //c
+            root->greater->greater->greater = C;
+
+        else if(root->greater->greater == NULL)
+            C;   // 31
+            C = C;
+            C = C = C;
+            root->greater->greater->greater->greater = C;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            C;   // 32
+            C = C;               //c
+            C = root;
+            C = C;            //c
+            root = C;

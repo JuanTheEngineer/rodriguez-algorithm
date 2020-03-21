@@ -1,0 +1,116 @@
+        node *root = NULL;
+
+        node *new = malloc(sizeof(node));      // 8
+        new->number = 8;// word
+        new->greater = new->less = NULL;
+        root = new;
+
+        if((root->less == NULL && root->greater == NULL)) || ((root->less != NULL && root->greater != NULL)   // I think i can make the if and if else actions in one action
+            node *new = malloc(sizeof(node));   // 10
+            new->number = 10;
+            new->less = root;
+            new->greater = NULL;
+            root = new;
+
+
+        else if(root->greater == NULL)
+            node *new = malloc(sizeof(node));   // 12
+            new->number = 12;
+            new->greater = new->less = NULL;
+            root->greater = new;
+
+        if(root->less != NULL && root->greater->less == NULL)
+            node *new = malloc(sizeof(node));   // 15
+            new->number = 15;
+            new->less = root;
+            new->greater = NULL;            //Always a pattern
+            root = new;                     //Always a pattern
+
+
+        else if(root->greater == NULL)
+            node *new = malloc(sizeof(node));   // 17
+            new->number = 17;
+            new->greater = new->less = NULL;
+            root->greater = new;            //Always a pattern
+
+        if(root->less != NULL && root->greater-> != NULL)
+            node *new = malloc(sizeof(node));   // 20
+            new->number = 20;               //c
+            new->less = root->greater;
+            new->greater = NULL;            //c
+            root->greater = new;
+
+
+        else if(root->greater->greater == NULL)
+            node *new = malloc(sizeof(node));   // 25
+            new->number = 25;
+            new->greater = new->less = NULL;
+            root->greater->greater = new;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            node *new = malloc(sizeof(node));   // 27
+            new->number = 27;               //c
+            new->less = root;
+            new->greater = NULL;            //c
+            root = new;
+
+
+        else if(root->greater->greater == NULL)
+            node *new = malloc(sizeof(node));   // 29
+            new->number = 29;
+            new->greater = new->less = NULL;
+            root->greater = new;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            node *new = malloc(sizeof(node));   // 32
+            new->number = 32;               //c
+            new->less = root->greater;
+            new->greater = NULL;            //c
+            root->greater = new;
+
+
+        else if(root->greater->greater == NULL)
+            node *new = malloc(sizeof(node));   // 35
+            new->number = 35;
+            new->greater = new->less = NULL;
+            root->greater->greater = new;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            node *new = malloc(sizeof(node));   // 38
+            new->number = 38;               //c
+            new->less = root->greater;
+            new->greater = NULL;            //c
+            root->greater = new;
+
+
+        else if(root->greater->greater == NULL)
+            node *new = malloc(sizeof(node));   // 40
+            new->number = 40;
+            new->greater = new->less = NULL;
+            root->greater->greater = new;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            node *new = malloc(sizeof(node));   // 42
+            new->number = 42;               //c
+            new->less = root->greater->greater;
+            new->greater = NULL;            //c
+            root->greater->greater = new;
+
+        else if(root->greater->greater == NULL)
+            node *new = malloc(sizeof(node));   // 45
+            new->number = 45;
+            new->greater = new->less = NULL;
+            root->greater->greater->greater = new;
+
+        if (root->less != NULL && root->greater->geater->less == NULL)
+            node *new = malloc(sizeof(node));   // 16
+            new->number = 16;               //c
+            new->less = root;
+            new->greater = NULL;            //c
+            root = new;
+
+        else if(root->greater->greater == NULL)
+            node *new = malloc(sizeof(node));   // 17
+            new->number = 17;
+            new->greater = new->less = NULL;
+            root->greater = new;
